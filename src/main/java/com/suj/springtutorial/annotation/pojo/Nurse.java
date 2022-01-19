@@ -3,9 +3,11 @@ package com.suj.springtutorial.annotation.pojo;
 import com.suj.springtutorial.idef.IStaff;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope(scopeName = "prototype")
 public class Nurse implements IStaff {
     @Value("NurseANM")
     private String qualification;
