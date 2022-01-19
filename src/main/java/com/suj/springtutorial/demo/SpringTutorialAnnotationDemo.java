@@ -16,9 +16,9 @@ public class SpringTutorialAnnotationDemo {
         IStaff staff;
         staff = (IStaff) applicationContext.getBean("doctor");
         staff.assist();
-        System.out.println(staff.getQualification());
+        System.out.println("Staff Details: "+staff.toString());
         staff = (IStaff) applicationContext.getBean("nurse");
         staff.assist();
-        System.out.println(staff.getQualification());
+        System.out.println("Staff Details: "+staff.toString());
     }
 }
