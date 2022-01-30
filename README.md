@@ -10,3 +10,8 @@ Scope of beans:
 3) Request - This scopes a bean definition to an HTTP request. Only valid in the context of a web-aware Spring ApplicationContext.
 4) Session - This scopes a bean definition to an HTTP session. Only valid in the context of a web-aware Spring ApplicationContext.
 5) Global Session - This scopes a bean definition to a global HTTP session. Only valid in the context of a web-aware Spring ApplicationContext.
+
+
+Life Cycle:
+> Intialization callbacks : o.sf.beans.factory.InitializationBean Interface has afterPropertiesSet() - To implement default initialization work
+> 
